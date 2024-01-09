@@ -1,0 +1,18 @@
+﻿<Window x:Class="Lab5.SaveToXML"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab5"
+        mc:Ignorable="d"
+        Title="SaveToXML" Height="350" Width="500">
+    <Grid>
+            <TextBox x:Name="FileName" Margin="50,70,50,220">.xml</TextBox>
+
+            <Button x:Name="btnSaveToXML" Margin="180,250,180,34" Click="ButtonSaveToXML_Click">
+                SavePlayList
+            </Button>
+
+            <TextBlock Margin="50,50,261,264"> File name: (Should end with .xml)</TextBlock>
+        </Grid>
+</Window>

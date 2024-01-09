@@ -1,0 +1,16 @@
+﻿<Window x:Class="Lab5.NewFileConfirm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab5"
+        mc:Ignorable="d"
+        Title="NewFileConfirm" Height="249" Width="800">
+    <Grid Margin="0,0,227,185">
+        <Label Margin="268,29,35,-63">Are you sure you want to create new playlist? </Label>
+        <Label Margin="291,63,50,-114">Current playlist will be determinated</Label>
+        <Button x:Name="btnAdd" Margin="291,119,60,-167" Click="ButtonNewFile_Click">
+            Proceed
+        </Button>
+    </Grid>
+</Window>

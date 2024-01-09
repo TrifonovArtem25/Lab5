@@ -1,0 +1,45 @@
+﻿<Window x:Class="Lab5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab5"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        <Menu Margin="1,1,250,536">
+            <MenuItem Header="File">
+                <MenuItem Header="Save to XML-file"  Click="ButtonSaveToXML_Click"></MenuItem>
+                <MenuItem Header="Save to JSON-file"  Click="ButtonSaveToJSON_Click"></MenuItem>
+                <MenuItem Header="Open XML-file" Click="ButtoOpenXML_Click"></MenuItem>
+                <MenuItem Header="Open JSON-file" Click="ButtonOpenJSON_Click"></MenuItem>
+                <MenuItem Header="New playlist" Click="ButtonSaveNewPlayList_Click"></MenuItem>
+            </MenuItem>
+            <Separator/>
+            <MenuItem Header="About">
+                <MenuItem Header="Developers"></MenuItem>
+                <MenuItem Header="Usage"></MenuItem>
+            </MenuItem>
+        </Menu>
+
+        <Label Margin="1,20,330,460">Songs</Label>
+        <ListBox  Margin="1,50,50,166" x:Name="PlayListSongs" />
+
+        <Button x:Name="btnAdd" Margin="130,110,130,390" Click="ButtonAddSong_Click" Grid.Column="1">
+            Add song
+        </Button>
+        <Button x:Name="btnDelete" Margin="130,190,130,310" Click="ButtonDeleteSong_Click" Grid.Column="1">
+            Delete song
+        </Button>
+    </Grid>
+</Window>

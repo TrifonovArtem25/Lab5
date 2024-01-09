@@ -1,0 +1,18 @@
+﻿<Window x:Class="Lab5.OpenXML"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab5"
+        mc:Ignorable="d"
+        Title="OpenXML" Height="350" Width="500">
+    <Grid Margin="0,0,0,-16">
+        <TextBox x:Name="FileName" Margin="50,68,50,219">.xml</TextBox>
+
+        <Button x:Name="btnOpenXML" Margin="180,250,180,34" Click="ButtonOpenXML_Click">
+            Open PlayList
+        </Button>
+
+        <TextBlock Margin="50,50,93,264"> File name: (Should end with .xml)</TextBlock>
+    </Grid>
+</Window>
