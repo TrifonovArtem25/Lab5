@@ -22,7 +22,6 @@ namespace Lab5
             {
                 return false;
             }
-
             playlist.Add(songToAdd);
             return true;
         }
@@ -46,9 +45,9 @@ namespace Lab5
                 return false;
             }
             List<Song> list = new List<Song>();
-            foreach (var song in playlist) 
-            { 
-                if(!song.Equals(songToDelete)) 
+            foreach (var song in playlist)
+            {
+                if (!song.Equals(songToDelete))
                 {
                     list.Add(song);
                 }
@@ -56,6 +55,18 @@ namespace Lab5
             playlist = list;
             return true;
         }
+        //public bool DeleteSong(Song songToDelete)
+        //{
+        //    if (SongInPlaylist(songToDelete))
+        //    {
+        //        //int before = playlist.Count;
+        //        playlist.Remove(songToDelete);
+        //        //int after = playlist.Count;
+        //        //if(before == after) { return true; }
+        //        return true;
+        //    }
+        //    return false;
+        //}
         public void Clear()
         {
             playlist = new List<Song>();

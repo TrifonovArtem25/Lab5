@@ -35,11 +35,19 @@
         <Label Margin="1,20,330,460">Songs</Label>
         <ListBox  Margin="1,50,50,166" x:Name="PlayListSongs" />
 
-        <Button x:Name="btnAdd" Margin="130,110,130,390" Click="ButtonAddSong_Click" Grid.Column="1">
+        <Button x:Name="btnAdd" Margin="60,110,230,390" Click="ButtonAddSong_Click" Grid.Column="1">
             Add song
         </Button>
-        <Button x:Name="btnDelete" Margin="130,190,130,310" Click="ButtonDeleteSong_Click" Grid.Column="1">
+        <Button x:Name="btnDelete" Margin="230,110,60,390" Click="ButtonDeleteSong_Click" Grid.Column="1">
             Delete song
+        </Button>
+        <TextBox x:Name="request" Margin="60,233,60,295" Grid.Column="1"/>
+        <TextBlock Margin="60,206,110,327" Grid.Column="1"> Search request:</TextBlock>
+        <Button x:Name="btnSearch" Margin="130,270,130,230" Click="ButtonSearchSong_Click" Grid.Column="1">
+            Search song
+        </Button>
+        <Button x:Name="btnResetSearch" Margin="139,342,139,188" Click="ButtonResetSearch_Click" Grid.Column="1">
+            Reset
         </Button>
     </Grid>
 </Window>

@@ -153,5 +153,34 @@ namespace Lab5
                 App.Current.Resources["NPL"] = "0";
             }
         }
+
+        private void ButtonSearchSong_Click(object sender, RoutedEventArgs e)
+        {
+            if (string.IsNullOrEmpty(request.Text))
+            {
+                PlayListSongs.Items.Clear();
+                return;
+            }
+
+            string[] SearchRequest = (request.Text).Split(' ');
+
+            IEnumerable<Song> searchResult = PL.Search(SearchRequest);
+
+            PlayListSongs.Items.Clear();
+            foreach (Song song in searchResult)
+            {
+                PlayListSongs.Items.Add(song);
+            }
+            request.Clear();
+        }
+
+        private void ButtonResetSearch_Click(object sender, RoutedEventArgs e)
+        {
+            PlayListSongs.Items.Clear();
+            foreach (Song song in PL.Songs)
+            {
+                PlayListSongs.Items.Add(song);
+            }
+        }
     }
 }

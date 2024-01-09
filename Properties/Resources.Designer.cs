@@ -90,6 +90,15 @@ namespace Lab5.Properties {
         /// <summary>
         ///   Looks up a localized string similar to .
         /// </summary>
+        internal static string request {
+            get {
+                return ResourceManager.GetString("request", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to .
+        /// </summary>
         internal static string Title_res {
             get {
                 return ResourceManager.GetString("Title_res", resourceCulture);
