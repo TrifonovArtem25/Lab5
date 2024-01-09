@@ -90,9 +90,9 @@ namespace Lab5.Properties {
         /// <summary>
         ///   Looks up a localized string similar to .
         /// </summary>
-        internal static string request {
+        internal static string Password {
             get {
-                return ResourceManager.GetString("request", resourceCulture);
+                return ResourceManager.GetString("Password", resourceCulture);
             }
         }
         

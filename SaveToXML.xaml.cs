@@ -35,7 +35,8 @@ namespace Lab5
             }
             else
             {
-                MessageBox.Show("Invalid name!");
+                new Error().ShowDialog();
+                //MessageBox.Show("Invalid name!");
                 App.Current.Resources["XML_Name"] = "";
             }
             

@@ -42,7 +42,7 @@ namespace Lab5
                 if(PL.AddSong(songToAdd))
                 {
                     PlayListSongs.Items.Add(songToAdd);
-                    MessageBox.Show("Success!");
+                    new Success().ShowDialog();
                 }
                 else
                 {
@@ -69,7 +69,7 @@ namespace Lab5
                     {
                         PlayListSongs.Items.Add(song);
                     }
-                    MessageBox.Show("Success!");
+                    new Success().ShowDialog();
                 }
                 else
                 {
@@ -86,7 +86,7 @@ namespace Lab5
             if (filename != "") 
             {
                 PL.ToXML(filename);
-                MessageBox.Show("Success!");
+                new Success().ShowDialog();
             }
             
         }
@@ -98,7 +98,7 @@ namespace Lab5
             if (filename != "")
             {
                 PL.ToJSON(filename);
-                MessageBox.Show("Success!");
+                new Success().ShowDialog();
             }
         }
         private void ButtoOpenXML_Click(object sender, RoutedEventArgs e)
@@ -149,7 +149,8 @@ namespace Lab5
             {
                 PlayListSongs.Items.Clear();
                 PL.Clear();
-                MessageBox.Show("New playlist created");
+                new Success().ShowDialog();
+                //MessageBox.Show("New playlist created");
                 App.Current.Resources["NPL"] = "0";
             }
         }
@@ -181,6 +182,11 @@ namespace Lab5
             {
                 PlayListSongs.Items.Add(song);
             }
+        }
+
+        private void NPTB_Click(object sender, RoutedEventArgs e)
+        {
+            new Easter().ShowDialog();
         }
     }
 }

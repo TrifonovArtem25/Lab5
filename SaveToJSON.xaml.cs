@@ -30,12 +30,12 @@ namespace Lab5
             {
                 App.Current.Resources["JSON_Name"] = FileName.Text;
                 FileName.Clear();
-                MessageBox.Show("Success!");
                 Close();
             }
             else
             {
-                MessageBox.Show("Invalid name!");
+                new Error().ShowDialog();
+                //MessageBox.Show("Invalid name!");
                 App.Current.Resources["JSON_Name"] = "";
             }
             FileName.Clear();

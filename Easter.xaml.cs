@@ -15,30 +15,25 @@ using System.Windows.Shapes;
 namespace Lab5
 {
     /// <summary>
-    /// Interaction logic for OpenJSON.xaml
+    /// Interaction logic for Easter.xaml
     /// </summary>
-    public partial class OpenJSON : Window
+    public partial class Easter : Window
     {
-        public OpenJSON()
+        public Easter()
         {
             InitializeComponent();
         }
-
-        private void ButtonOpenJSON_Click(object sender, RoutedEventArgs e)
+        private void ButtonContinue_Click(object sender, RoutedEventArgs e)
         {
-            if (!string.IsNullOrWhiteSpace(FileName.Text) && FileName.Text.EndsWith(".json") && FileName.Text != ".json")
+            if (PW.Text == "368923")
             {
-                App.Current.Resources["JSON_Name"] = FileName.Text;
-                FileName.Clear();
-                Close();
+                new Surprise().ShowDialog();
             }
             else
             {
                 new Error().ShowDialog();
-                //MessageBox.Show("Invalid name!");
-                App.Current.Resources["JSON_Name"] = "";
             }
-            FileName.Clear();
+            Close();
         }
     }
 }

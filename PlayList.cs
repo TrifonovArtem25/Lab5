@@ -55,18 +55,6 @@ namespace Lab5
             playlist = list;
             return true;
         }
-        //public bool DeleteSong(Song songToDelete)
-        //{
-        //    if (SongInPlaylist(songToDelete))
-        //    {
-        //        //int before = playlist.Count;
-        //        playlist.Remove(songToDelete);
-        //        //int after = playlist.Count;
-        //        //if(before == after) { return true; }
-        //        return true;
-        //    }
-        //    return false;
-        //}
         public void Clear()
         {
             playlist = new List<Song>();

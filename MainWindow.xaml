@@ -28,7 +28,7 @@
             <Separator/>
             <MenuItem Header="About">
                 <MenuItem Header="Developers"></MenuItem>
-                <MenuItem Header="Usage"></MenuItem>
+                <MenuItem Header="NEVER PRESS THIS BUTTON!!!!" Click="NPTB_Click"></MenuItem>
             </MenuItem>
         </Menu>
 
@@ -42,12 +42,12 @@
             Delete song
         </Button>
         <TextBox x:Name="request" Margin="60,233,60,295" Grid.Column="1"/>
-        <TextBlock Margin="60,206,110,327" Grid.Column="1"> Search request:</TextBlock>
+        <TextBlock Margin="60,206,195,327" Grid.Column="1"> Search request:</TextBlock>
         <Button x:Name="btnSearch" Margin="130,270,130,230" Click="ButtonSearchSong_Click" Grid.Column="1">
             Search song
         </Button>
         <Button x:Name="btnResetSearch" Margin="139,342,139,188" Click="ButtonResetSearch_Click" Grid.Column="1">
-            Reset
+            Reset search result
         </Button>
     </Grid>
 </Window>

@@ -36,7 +36,7 @@ namespace Lab5
             }
             else
             {
-                MessageBox.Show("Error!");
+                new Error().ShowDialog();
                 App.Current.Resources["Author_res"] = "";
                 App.Current.Resources["Title_res"] = "";
             }

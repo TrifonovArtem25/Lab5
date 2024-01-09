@@ -1,0 +1,18 @@
+﻿<Window x:Class="Lab5.Easter"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab5"
+        mc:Ignorable="d"
+        Title="Easter" Height="450" Width="800">
+    <Grid Height="334" VerticalAlignment="Center">
+        <TextBox x:Name="PW" Margin="125,70,125,220"></TextBox>
+
+        <Button x:Name="cont" Margin="255,185,255,84" Click="ButtonContinue_Click">
+            continue
+        </Button>
+
+        <TextBlock Margin="125,50,387,264"> Enter Password:</TextBlock>
+    </Grid>
+</Window>

@@ -110,6 +110,12 @@
     <Compile Include="DeleteSong.xaml.cs">
       <DependentUpon>DeleteSong.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Easter.xaml.cs">
+      <DependentUpon>Easter.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Error.xaml.cs">
+      <DependentUpon>Error.xaml</DependentUpon>
+    </Compile>
     <Compile Include="NewFileConfirm.xaml.cs">
       <DependentUpon>NewFileConfirm.xaml</DependentUpon>
     </Compile>
@@ -130,7 +136,21 @@
       <DependentUpon>SaveToXML.xaml</DependentUpon>
     </Compile>
     <Compile Include="Song.cs" />
+    <Compile Include="Success.xaml.cs">
+      <DependentUpon>Success.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Surprise.xaml.cs">
+      <DependentUpon>Surprise.xaml</DependentUpon>
+    </Compile>
     <Page Include="DeleteSong.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Easter.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Error.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -167,6 +187,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="SaveToXML.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Success.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Surprise.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
