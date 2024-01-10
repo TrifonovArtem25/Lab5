@@ -27,7 +27,6 @@
             </MenuItem>
             <Separator/>
             <MenuItem Header="About">
-                <MenuItem Header="Developers"></MenuItem>
                 <MenuItem Header="NEVER PRESS THIS BUTTON!!!!" Click="NPTB_Click"></MenuItem>
             </MenuItem>
         </Menu>
