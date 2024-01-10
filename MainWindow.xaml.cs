@@ -150,7 +150,6 @@ namespace Lab5
                 PlayListSongs.Items.Clear();
                 PL.Clear();
                 new Success().ShowDialog();
-                //MessageBox.Show("New playlist created");
                 App.Current.Resources["NPL"] = "0";
             }
         }

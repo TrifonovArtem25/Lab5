@@ -131,36 +131,5 @@ namespace Lab5
             }
             return false;
         }
-        //public bool ToSQL(String name)
-        //{
-        //    using (var db = new BloggingContext())
-        //    {
-        //        if (db.Song.Where(b => b.PlayListName == name).Count() != 0)
-        //        {
-        //            return false;
-        //        }
-        //        db.AddRange(this.playlist.Select(c => new Song()
-        //        {
-        //            Author = c.Author,
-        //            Title = c.Title,
-        //            PlayListName = name
-        //        }));
-        //        db.SaveChanges();
-        //        return true;
-        //    }
-        //}
-        //public bool FromSQL(string name)
-        //{
-        //    using (var db = new BloggingContext())
-        //    {
-        //        IQueryable<Song> query = (db.Song.Where(b => b.PlayListName == name));
-        //        if (query.Count() == 0)
-        //        {
-        //            return false;
-        //        }
-        //        this.playlist = query.ToList();
-        //        return true;
-        //    }
-        //}
     }
 }
